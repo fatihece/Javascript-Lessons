@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fwhmiuyar | JS lesson</title>
+</head>
+<body>
+    <!-- script body etiketinin altına yerleştirildiğinde, görüntüleme hızı artar.
+    harici komut dosyası script içermez
+    birden fazla script bloğu açılabilir.
+    body ya da head tagleri arasına yerleştirebilirsin.
+    Kodlar yukarıdan aşağıya doğru derlenir. -->
+<p id="date"></p>
+<p id="result"></p>
+<input type="button" value="Click" onclick="Call();">
+<p id="result2"></p>
+
+<script>
+function Call(){
+    alert("Javascript öğreneceğim.");
+    document.getElementById('result').innerHTML="Javascript ne kadar da canlı";
+    document.getElementById('result2').innerHTML="Javascript öğrenmek için çok çalışacağım";
+
+}
+document.getElementById('date').innerHTML = "Tarih: 12.06.2021- 08:24"
+</script>
+
+
+
+</body>
+</html>

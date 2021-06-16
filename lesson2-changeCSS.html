@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fehmiuyar | JS lesson</title>
+</head>
+<body>
+    <h2 id="result">Bu HTML elementinin CSS ni değiştirdim. Ben Javascriptim.</h2>
+    <input type="button" value="Change CSS" onclick="changeCSS();">
+    <hr>
+    <h3 style="display:none" id="showme">Bööööööğğösğsğğ</h3>
+    <input type="button" value="Show Me!" onclick="showMe();">
+    <script>
+        function changeCSS(){
+            document.getElementById('result').style.color= "red";
+            document.getElementById('result').style.fontSize = "48px";
+        }
+        function showMe(){
+            document.getElementById('showme').style.display = "block";
+        }
+    </script>
+
+
+
+</body>
+</html>

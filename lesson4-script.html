@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fehmiuyar | lesson5</title>
+    <script>
+        document.write("Ben head bloğundaki script etiketi içindeyim")
+    </script>
+</head>
+<body>
+    <p id="result"></p>
+    <input type="button" value="Click" onclick="call();">
+    <p id="result2"></p>
+
+    <script>
+    function call(){
+    alert("Günaydın Arkadaşlar!!");
+    document.getElementById("result").innerHTML = "Tarih: 14 Haziran 2021, saat:07:35";
+    document.getElementById("result2").innerHTML = "Fehmi Uyar ile JS dersleri";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statements</title>
+</head>
+<body>
+    <div id="result"></div>
+    <button onclick="favoriteBook()">See the Result</button>
+    <script>
+        /*Noktalı virgülle ayrılan, biten kod satırına statement denir. 
+        Aşağıdaki her satır bir statement.
+        White Space: Js birden fazla boşluğu yok sayar.
+        Satırda 80 karakterden fazlası yazmak uygun olmaz. Kodun okunulabilirliği için 
+        Ekranın 60%,70% kullanmak uygun olur.
+        */ 
+        
+        var firstName, lastName; 
+        firstName = "Ece";
+        lastName = "Gülce";
+        document.getElementById("result").innerHTML = firstName + " " + lastName;
+
+        function favoriteBook(){
+            var bookName,bookWriter;
+            bookName = "Martin Eden"
+            bookWriter = "Jack London"
+            document.getElementById("result").innerHTML = bookName + " > " + bookWriter
+            
+        }
+    </script>
+    
+</body>
+</html>

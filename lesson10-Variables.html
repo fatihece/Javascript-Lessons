@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <div id="result"></div>
+    
+    <script>
+    /*
+        Değişkenler adlar oluşturmak için genel kurallar:
+            -İsimler harf, rakam, altçizgi ve dolar işaretleri içerebilir.
+            -İsimler bir harfle başlamalıdır
+            -İsimler ayrıca $ ve _ ile de başlatılabilir (ancak ben pek kullanmıyorum)
+            -İsimler büyük / küçük harf duyarlıdır (y ve Y farklı değişkenlerdir)
+            -Ayrılmış kelimeler (JavaScript anahtar kelimeleri gibi, if,else, for gibi) 
+        isimler olarak kullanılamaz
+            -JavaScript'te eşittir işareti (=), bir “atama" operatörüdür, 
+        "eşittir" operatörü değildir.
+            -"Eşittir" operatörü, JavaScript'te “==“ gibi yazılır
+
+    */
+        var firstName, lastName; 
+        firstName = "Ece";
+        lastName = "Gülce";
+        document.getElementById("result").innerHTML = firstName + " " + lastName;
+
+        
+            
+    
+    </script>
+    
+</body>
+</html>

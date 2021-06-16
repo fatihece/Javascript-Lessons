@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlk Javascript | Haziran</title>
+
+</head>
+
+<body>
+    <p id="result" class="test">Sürpriz kitap hediye</p>
+    <input type="button" value="Bas Bakalım" onclick="document.getElementById('result').innerHTML = 'Don Quijote'">
+    <hr>
+    <p id="js" class="javas">Javascript olarak HTML e hükmedebilirim</p>
+    <input type="button" value="Tıkla"
+        onclick="document.getElementById('js').innerHTML= 'Javascript içeriğe ulaştı ve değiştirdi. Nasıl ama:)'">
+    <hr>
+    <h1 id="continue" class="forward">Devam etmek için tıkla</h1>
+    <input type="button" value="See the Results" onclick="flex();">
+    <script>
+        function flex() {
+            document.getElementById('continue').innerHTML = 'Tebrikler';
+        }
+    </script>
+</body>
+
+</html>
