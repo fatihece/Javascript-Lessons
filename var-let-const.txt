@@ -1,0 +1,6 @@
+
+
+
+var -> function scope yani fonksiyon içinde tanımlanırsa onun dışından erişilemez diğer her türlü tanımda her yerden erişilir ve değiştirilir
+let -> block scope, blok içinde tanımlanırsa yani { } gördüğünüz her yerde bu bloklar dışında erişilemez, fonksiyon içinde tanımlanırsa function scope yine fonksiyon dışında erişilemez, bunların haricinde global scope olur her yerden erişilebilir ve mutabledır yani değiştirilebilir. var'dan farklı olarak 2. kez aynı isimle değişken tanımlayamazsınız.
+const -> let'in aynısı. Tek farkı immutable yani değiştirilemez. Kısaca yeni bir değer atayamazsınız.
