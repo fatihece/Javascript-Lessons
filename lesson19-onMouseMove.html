@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+</head>
+<body>
+    <div id="result"></div>
+    <p onmousemove="mouseMove(event);" style="width: 300px; height: 100px; border: 2px solid orangered; background-color: gray;"></p>
+
+    
+
+<script>
+    // mouse hareket ettiğinde javascripti tetikler ve harekete geçirir.
+
+    function mouseMove(e){
+        var x=e.clientX;
+        var y=e.clientX;
+        document.getElementById("result").innerHTML = "Koordinatlar x: " + x + " y :" + y;
+    }
+</script>
+</body>
+</html>
