@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+
+<script>
+
+/* function printScreen(){
+    var text = "Günler gelip geçmekte, kuşlar gibi uçmaktalar.";
+    document.getElementById("result").innerHTML = text.length;
+    text'in uzunluğunu bulduk
+}
+printScreen(); */
+
+/*********************************************************************/
+
+/* printScreen();
+function printScreen(){
+    var text = new String("Javascript");
+    var x= new String("Javascript");
+    document.getElementById("result").innerHTML = (x==text); // false, nesneler karşışaltırılamaz.
+    //document.getElementById("result").innerHTML = typeof text; => object
+
+} */
+printScreen();
+function printScreen(){
+    var text = "Javascript Angular JS, React JS, Vue JS, NodeJS";
+    document.getElementById("result").innerHTML = text.slice(10,21);
+}
+
+
+</script>
+    
+</body>
+</html>
