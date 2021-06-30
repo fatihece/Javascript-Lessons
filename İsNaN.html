@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İsNaN</title>
+</head>
+<body>
+     <!-- Bir değerin bir sayı olup olmadığını öğrenmek için 
+     genel JavaScript fonksiyonu isNaN () kullanabilirsiniz. is it NaN? -->
+     <p id="result"></p>
+     <input type="text"  id="Number" placeholder="Sadece Sayı Girin " >
+     <button type="button" onclick="control()">Click</button>
+     <script>
+         
+         function control(){
+             var x = document.getElementById("Number").value;
+             var y = 60;
+             var z = x*y;
+             if (isNaN(x)) {
+                 document.getElementById("result").innerHTML = "Lütfen sadece sayı girin";     
+             } else {
+                 document.getElementById("result").innerHTML = "Tebrikler girdiğiniz sayı: "+ x;     
+             }
+         
+             }
+        
+     </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toString</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        converter();
+        function converter(){
+            let x,y,z,a;
+            x = 128; // onluk sistem
+            y = x.toString(16); // hexadecimal 16'lı
+            z = x.toString(8); // octamal 8'li
+            a = x.toString(2); // binary 2'li
+            document.getElementById("result").innerHTML = "Onluk Sistem: "+x+"<br>"+
+            "Hexadecimal Sistem: " +y+"<br>"+
+            "Octal Sistem: " +z+"<br>"+
+            "Binary Sistem: " +a;
+        }
+    </script>
+</body>
+</html>

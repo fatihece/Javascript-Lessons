@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        // printScreen();
+        // function printScreen(){
+        //     // var x = 7; // number
+        //     // var y = 3.14; // number
+        //     // var a = 12e4; //120000 ---12 * 10 **4
+        //     // var b = 12e-4 // 12x10**-4 ---0.0012
+        //     //JavaScript'in tek bir sayı türü vardır. 
+        //     // Sayılar, ondalıklı veya ondalıksız olarak yazılabilir.
+
+
+        //     // var x=10;
+        //     // var y=60;
+        //     // var z= "Sonuç: " + x+y; // sonuç:1060 typoef:string
+        //     // var c ="10"
+        //     //JavaScript tüm sayısal işlemlerde stringleri sayılara çevirmeye çalışacaktır
+
+        //     // NaN = Not a Number
+        //     //NaN, bir numaranın JavaScript’in kabul ettiği bir numara olmadığını belirten  bir kelimedir.
+        //     // var x = 100/"JS" // NaN
+        //     // var y= 100/"10" // 10,string içindeki sayıyı number kabul edip kullanıyor
+        //     // NaN typeof Number
+        //     document.getElementById("result").innerHTML = 
+        //}
+
+
+        endless();
+        function endless(){
+            // let x = 70/0; //infinity : typeof number
+            // let y = -70/0; // -inifinity number
+            // document.getElementById("result").innerHTML = x + "<br>" + y;
+            var x,y,z;
+            x = 128; // onluk sistem
+            y = x.toString(16); // hexadecimal 16'lı
+            z = x.toString(8); // Octal 8'li
+            a = x.toString(2); // binary 2'li
+            document.getElementById("result").innerHTML = "Onluk Sistem: "+x+"<br>"+
+            "Hexadecimal Sistem: " +y+"<br>"+
+            "Octal Sistem: " +z+"<br>"+
+            "Binary Sistem: " +a;
+        }    
+    </script>
+</body>
+</html>
