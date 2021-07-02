@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers Methods</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+    show();
+    function show(){
+        let x;
+        x = 7.856;
+        document.getElementById("result").innerHTML = "x.toExponential(): " + x.toExponential() + "<br>" +
+        "x.toExponential(2): " + x.toExponential(2) + "<br>" + // (2) : virgülden sonra 2 basamak olsun
+        "x.toExponential(4): " + x.toExponential(4) + "<br>" + // (4) : virgülden sonra 4 basamak olsun
+        "x.toExponential(6): " + x.toExponential(6) + "<br>"+
+            // x.toExponential(): 7.856e+0 ------ e+0 : bilimsel olarak gösterim
+            // x.toExponential(2): 7.86e+0
+            // x.toExponential(4): 7.8560e+0
+            // x.toExponential(6): 7.856000e+0
+
+        "x.toFixed(0): " + x.toFixed(0) + "<br>" +          // x.toFixed(0): 8
+                                                            // x.toFixed(2): 7.86
+                                                            // x.toFixed(4): 7.8560
+        "x.toFixed(2): " + x.toFixed(2) + "<br>" + 
+        "x.toFixed(4): " + x.toFixed(4) + "<br>";  
+    }
+</script>
+</body>
+</html>

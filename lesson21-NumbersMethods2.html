@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers Methods 2</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+  function myFunction() {
+  var a = parseInt("10") + "<br>"; // 10
+  var b = parseInt("10.00") + "<br>"; //10
+  var c = parseInt("10.33") + "<br>"; //10
+  var d = parseInt("34 45 66") + "<br>"; //34
+  var e = parseInt("   60   ") + "<br>"; //60
+  var f = parseInt("40 years") + "<br>"; //40
+  var g = parseInt("He was 40") + "<br>"; //NaN
+
+  var h = parseInt("10", 30)+ "<br>"; // 30
+  var i = parseInt("010")+ "<br>"; // 10
+  var j = parseInt("10", 8)+ "<br>"; // 8
+  var k = parseInt("0x10")+ "<br>"; // 16
+  var l = parseInt("10", 16)+ "<br>"; // 16
+ 
+
+  var n = a + b + c + d + e + f + g + "<br>" + h + i + j + k +l;
+  document.getElementById("result").innerHTML = n;
+}
+myFunction()
+</script>
+</body>
+</html>
