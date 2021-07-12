@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Yazılım dilleri</h2>
+        <span>Sunucus ve İstemci tabanlı diller</span>
+        <p id="result">Javascript</p>
+        <p name="resultName">JQUERY</p>
+        <p name="resultName">Angular JS</p>
+        <p name="resultName">React JS</p>
+        <p name="resultName">Vue JS</p>
+        <p id="result2">Node JS</p>
+        <p class="color">PHP</p>
+        <p class="color">ASP.net</p>
+        <p class="color">Python</p>
+        <p class="color">ColdFusion</p>
+        <span class="color">Korkma sönmez bu şafaklarda yüzen al sancak</span>
+        <h5>MYSQL</h5>
+        <h5>MSSQL</h5>
+        <h5>ORACLE</h5>
+        <p id="resultEnd"></p>
+
+        <div class="container">
+            <p id="result"></p>
+            <p><a href="#" class="link" name="lang1">JavaScript</a></p>
+            <p><a href="#" class="link" name="lang1">JQUERY</a></p>
+            <p><a href="#" class="link" name="lang1">Angular JS</a></p>
+            <p><a href="#" class="link" name="lang1">React JS</a></p>
+        </div>
+    </div>
+
+    <script>
+
+        //getElementsByName
+
+        // const findElement = document.getElementsByName("resultName");
+        // alert(findElement[0].innerText);
+        // alert(findElement[2].innerText);
+
+        // const findElement = document.getElementsByName("resultName");
+        // console.log(findElement);
+        // let message="", i;
+        // for(i=0; i<findElement.length; i++){
+        //     // console.log(findElement[i].innerText);
+        //     message += findElement[i].innerHTML +"\n"        }
+        // console.log(message); // alt alta yazdırmak için console yazıdırırken "\n" kullan, html sayfasına yazdırırken de "<br>"
+        // document.getElementById("resultEnd").innerHTML = message
+            
+        // const tagName = document.getElementsByTagName("h5")
+        // console.log(tagName);
+        // alert(tagName[1].innerHTML);
+////////////////////////////////////
+
+
+        /// getElementsTagName
+        // const parag = document.getElementsByTagName("p");
+        // console.log(parag);
+
+        // let message= "", i;
+        // for(i=0; i<parag.length; i++){
+        //     message += parag[i].innerText + "\n"
+        // }
+        // alert(message);
+/////////////////////////////////////
+
+        //getElementsClassName
+        // const parag = document.getElementsByClassName("color");
+        // console.log(parag);
+        // let message = " ", i= 0;
+        // for(i=0; i <parag.length; i++){
+        //     message += parag[i].innerHTML + "\n";
+        // }
+        // alert(message)
+/////////////////////////////////////
+
+        // querySelector - All
+        // const parag = document.querySelectorAll(".color");
+        // console.log(parag);
+        // let message = " ", i= 0;
+        // for(i=0; i <parag.length; i++){
+        //     message += parag[i].innerHTML + "\n";
+        // }
+        // alert(message)
+        
+
+        // const findElement = document.querySelector("span.color");
+        // console.log(findElement);
+        // alert(findElement.innerHTML)
+
+        // const findElement = document.querySelectorAll("[name]");
+        // console.log(findElement);
+//////////////////////////////////////////
+
+// anchorlara ulaşma
+            // alert(document.anchors[1].innerText)
+            // alert(document.body.innerHTML)
+            // alert(document.head.innerHTML)
+
+            // alert(document.title) // başlığı verdi
+
+
+    </script>
+</body>
+</html>

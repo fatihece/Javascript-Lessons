@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 onclick="changeText(this)">Click me!!!</h2>
+<!-- this : h2 nesnesini fonksiyonun içine parametre olarak at -->
+    <p id="result"></p>
+    <!-- <button type="button" onclick="squareRoot()">Click Me!!!</button> -->
+    <button id="Btn">Second Way</button>
+
+    <script>
+        function changeText(arg){
+            arg.innerHTML = "Javascript is the king of the web";
+        }
+
+        // function squareRoot(){
+        //     let getNumber, result;
+        //     getNumber = prompt("Please enter a number...");
+        //     result = Math.sqrt(getNumber);
+        //     document.querySelector("#result").innerHTML = result
+        // }
+        
+            ////////second way///////////
+         const buton = document.querySelector("#Btn");  
+        //  console.log(buton);  
+        buton.onclick = function(){
+            let getNumber, result;
+            getNumber = prompt("Please enter a number...");
+            result = Math.sqrt(getNumber);
+            document.querySelector("#result").innerHTML = result
+        }
+
+
+
+    </script>
+</body>
+</html>

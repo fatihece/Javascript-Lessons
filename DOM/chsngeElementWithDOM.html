@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p id="result">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam animi quibusdam obcaecati harum est necessitatibus quia minus neque tempore!</p>
+        <img src="../pic/on.jpg" alt="Açık" id="picture" height="150px" width="100px">
+        <button type="button" onclick="changeCSS()">changeCSS</button>
+    </div> 
+
+
+    <script>
+        // function changeCSS(){
+        //     // document.querySelector("#picture").scr="../pic/off.jpg"
+
+        //     // document.querySelector("#picture").setAttribute("height", "250px")
+        // }
+            function changeCSS(){
+                let changer = document.querySelector("#result");
+                    changer.style.backgroundColor = "black";
+                    changer.style.color = "red";
+                    changer.style.padding= "20px";
+                    changer.style.fontSize = "20px"
+                }
+
+    </script>
+</body>
+</html>
