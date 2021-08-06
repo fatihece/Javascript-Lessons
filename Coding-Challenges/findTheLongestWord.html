@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Longest word</title>
+</head>
+<body>
+    <script>
+
+        function findLongestWord(text){
+            let str = text.split(" ");
+            console.log(str);
+            let longest = "";
+            for (let element of str) {
+                if(element.length > longest.length){
+                    longest = element;
+                }
+                return longest;
+            }
+        }
+
+        console.log(findLongestWord("qr brown fox jumped over the lazy dog"));
+    </script>
+</body>
+</html>
