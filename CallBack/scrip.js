@@ -48,7 +48,8 @@ let users = [
 ]
 
 function iterateUSers(myCB) {
-    users.forEach( user => myCB(user));
+    users.forEach(user => myCB(user));
+    
 }
 
 //-------------total salary-----------
